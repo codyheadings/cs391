@@ -1,0 +1,11 @@
+#main-content, #error-content{
+    visibility: hidden;
+}
+
+#error-content{
+    color: red;
+}
+
+img{
+    max-width: 20%;
+}
