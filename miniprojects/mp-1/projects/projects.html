@@ -2,32 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="projects.css">
     <title>Projects | Resume</title>
 </head>
 <body>
-<!--Body content for Projects page-->
-<header>
-    <h1>Projects</h1>
-    <p><em>What I've Done</em></p>
-</header>
-<!--Navigation Section-->
-<nav>
-    <ul>
-        <li><a href="../index/index.html">Home</a></li>
-        <li><a href="../education/education.html">Education</a></li>
-        <li><a href="../work/work.html">Work Experience</a></li>
-        <li><a href="../leadership/leadership.html">Leadership Experience</a></li>
-        <li><a href="../skills/skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-    </ul>
-</nav>
-<!--Main Text Section-->
-<main>
-    <a href="https://github.com/codyheadings?tab=repositories" target="_blank">GitHub</a>
-</main>
-<!--Copyright Information-->
-<footer>
-    <p>All Rights Reserved by Cody Headings <a href="">Credits</a> &copy; 2025</p>
-</footer>
+    <div id="wrapper">
+        <!--header begins-->
+        <header>
+            <h1>Cody Headings</h1>
+            <p><em>Online Resume</em></p>
+        </header>
+        <!--Header ends-->
+
+        <!--Navigation Starts-->
+        <div id="columns">
+            <nav>
+                <ul>
+                    <li><a href="../index/index.html">Home</a></li>
+                    <li><a href="../education/education.html">Education</a></li>
+                    <li><a href="../work/work.html">Employment</a></li>
+                    <li><a href="../leadership/leadership.html">Leadership</a></li>
+                    <li><a href="../skills/skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            <!--Navigation Ends-->
+
+            <!--Main Section Starts-->
+            <main>
+                <h3>Projects</h3>
+                <a href="https://github.com/codyheadings?tab=repositories" target="_blank">GitHub</a>
+
+                <h4>Javascript Calculator</h4>
+                <div id="calculator">
+                    <div id="inputs">
+                        <label for="first-num-input">First Number:</label><input type="text" id="first-num-input">
+                        <label for="second-num-input">Second Number:</label><input type="text" id="second-num-input">
+                    </div>
+
+                    <div id="buttons">
+                        <div id="addsub-buttons">
+                            <button onclick="addition()">+</button>
+                            <button onclick="subtract()">-</button>
+                        </div>
+
+                        <div id="multdiv-buttons">
+                            <button onclick="multiply()">*</button>
+                            <button onclick="divide()">/</button>
+                        </div>
+
+                        <div id="powclear-buttons">
+                            <button onclick="power()">**</button>
+                            <button id="clear" onclick="clearCalc()">clear</button>
+                        </div>
+                    </div>
+
+                </div>
+                <p id="output"></p>
+
+            </main>
+            <!--Main Section Ends-->
+        </div>
+        <!--Footer Begins-->
+        <footer>
+            <p>All Rights Reserved by Cody Headings <a href="">Credits</a> &copy; 2025</p>
+        </footer>
+        <!--Footer ends-->
+    </div>
+<script src="calc.js"></script>
 </body>
 </html>

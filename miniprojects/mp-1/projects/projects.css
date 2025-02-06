@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#columns{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: #156064ff;
+    color: white;
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #2e282aff;
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding: 1vh 1vw;
+    height: 100%;
+}
+
+nav ul li{
+    font-size: calc(3px + 2vw);
+    width: 90%;
+    background-color: #156064ff;
+    padding: 2vh 2vw;
+    margin: 1vh auto;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+main h3{
+    font-size: calc(8px + 2vw);
+    margin: 1vh 1vw;
+    text-align: center;
+}
+
+main h4{
+    font-size: calc(12px + 1vw);
+    margin: 1vh 1vw;
+    text-align: center;
+}
+
+main a{
+    margin: 1vh 1vw;
+    font-size: calc(10px + .5vw);
+    color: #156064ff;
+}
+
+main button{
+    align-items: center;
+    color: white;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 10%;
+    background-color: #156064ff;
+    margin: 1vh auto;
+    font-size: calc(6px + .5vw);
+    font-family: "Lucida Console", sans-serif;
+    min-width: 50px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + .5vw);
+    color: white;
+    padding: 1vh 1vw;
+}
+
+#inputs{
+    display: block;
+    width: 100%;
+    padding: 1vh 0 1vh 1vw;
+    margin: 1vh 0 1vh 5vw;
+    position: relative;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    height: 7vh;
+    width: 80%;
+}
+
+#output{
+    font-size: calc(18px + .5vw);
+    margin: 1vh 1vw;
+    text-align: center;
+}
+
+#calculator{
+    background-color: #2e282aff;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    height: 30vh;
+    flex-direction: row;
+    position: relative;
+    min-width: 350px;
+}
+
+#addsub-buttons{
+    padding-top: 1.5vh;
+    margin: 1vh auto;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+#multdiv-buttons{
+    margin: 1vh auto;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+#powclear-buttons{
+    margin: 1vh auto;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#clear{
+    background-color: #4C4246;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1vh 1vw;
+    background-color: #F5F5F5;
+}
+
+footer a{
+    color: #156064ff
+}
+
+@media screen and (max-width: 800px){
+    header{
+        align-items: center;
+    }
+
+    #columns{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #2e282aff;
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li{
+        font-size: calc(2px + 1.5vw);
+        padding: 1% 0.5%;
+        margin: 1% 0.5%;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: #F5F5F5;
+    }
+
+    main p{
+        margin: 2% 2%;
+        font-size: calc(3px + 2vw);
+    }
+
+    main li{
+        margin: 2% 2%;
+        font-size: calc(3px + 2vw);
+    }
+
+    main h3{
+        font-size: calc(8px + 3vw);
+        margin: 1vh 1vw;
+        text-align: center;
+    }
+
+    main h4{
+        font-size: calc(10px + 2vw);
+        margin: 1vh 1vw;
+    }
+
+    main a{
+        margin: 2% 2%;
+        font-size: calc(3px + 2vw);
+    }
+
+    button{
+        min-width: 50px;
+    }
+
+    footer{
+        padding: 2vh 1vw;
+    }
+}
